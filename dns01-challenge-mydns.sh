@@ -2,9 +2,9 @@
 
 # certbot Command
 # -- dry-run --
-# sudo certbot certonly --manual --preferred-challenge=dns --manual-auth-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -r" --manual-cleanup-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -d" -d program-notes.work --server https://acme-v02.api.letsencrypt.org/directory --agree-tos --dry-run
+# sudo certbot certonly --manual --preferred-challenge=dns --manual-auth-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -r" --manual-cleanup-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -d" -d [yourdomain] --server https://acme-v02.api.letsencrypt.org/directory --agree-tos --dry-run
 # -- production --
-# sudo certbot certonly --manual --preferred-challenge=dns --manual-auth-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -r" --manual-cleanup-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -d" -d program-notes.work --server https://acme-v02.api.letsencrypt.org/directory --agree-tos
+# sudo certbot certonly --manual --preferred-challenge=dns --manual-auth-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -r" --manual-cleanup-hook "/usr/local/script/mydns/dns01-challenge-mydns.sh -d" -d [yourdomain] --server https://acme-v02.api.letsencrypt.org/directory --agree-tos
 
 declare -r LOG="./mydns.log"
 echo $(date '+%Y/%m/%d %H:%M:%S') >> $LOG
