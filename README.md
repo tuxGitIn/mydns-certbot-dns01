@@ -7,8 +7,8 @@ https://github.com/disco-v8/DirectEdit
 # 動作環境
 linux (debian-based distros)
 
-また、以下のコマンドが使用可能であることが必要です。
-curl
+また、以下のコマンドが使用可能であることが必要です。  
+curl  
 certbot
 
 # 使用方法
