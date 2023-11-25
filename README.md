@@ -1,7 +1,7 @@
 # mydns-certbot-dns01
 Let's Encrypt で dns-01チャレンジを行うシェルスクリプト。
 
-スクリプトの作成には以下のリポジトリを参考にしてあります。
+スクリプトの作成には以下のリポジトリを参考にしてあります。  
 https://github.com/disco-v8/DirectEdit
 
 # 動作環境
